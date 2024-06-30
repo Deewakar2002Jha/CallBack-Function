@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALLBACK FUNCTION IN JAVASCRIPT</title>
+</head>
+<body>
+    <H1>CALLBACK FUNCTION USING JAVASCRIPT</H1>
+    <div id="myText"></div>
+    <div id="myText2"></div>
+    <script>
+        //defineing the variable
+        var t = document.getElementById("myText");
+        var h = document.getElementById("myText2");
+
+        //1. function defination
+        function getName(name)
+        {//name is the formal argument
+            console.log('hello',name);
+            t.innerHTML = 'Hello, '+name;
+            //Function returning something
+            return 'Hello, '+name;
+        }
+        
+        //2.  function calling
+        var z = getName('Deewkar jha');//'deewakar' is actual argument
+        var x = getName('kishan karmur');
+
+        t.innerHTML = z;
+        h.innerHTML = x;
+
+        //  console.log(x);
+    </script>
+</body>
+</html>
