@@ -32,5 +32,21 @@
 
         //  console.log(x);
     </script>
+    <script> 
+        //Exapmle pf callback funtion using function inside the function
+        //function defination
+        function getSomeData(obj,orange){//prototype
+            orange(obj);
+        }
+        // function calling
+        getSomeData({name:"Deewakar",company:"Jha Ji PVT LTM"},function(response){
+            console.log(response);
+            // for checking the type of object
+            console.log(typeof response);
+            //how to access object element
+            console.log(response.name);
+            console.log(response.company);
+        });
+    </script>
 </body>
 </html>
